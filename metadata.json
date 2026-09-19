@@ -1,0 +1,6 @@
+{
+  "name": "FileFlow – Smart File Converter",
+  "description": "Convert your files quickly and easily between PDF, JPG, PNG, TXT, and DOCX formats.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
