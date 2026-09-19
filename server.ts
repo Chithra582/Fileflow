@@ -6,10 +6,10 @@ import { createServer as createViteServer } from "vite";
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
   // Start Python FastAPI background process on port 8000
-  const pythonCmd = "python3";
+  const pythonCmd = process.env.PYTHON_CMD || (process.platform === "win32" ? "python" : "python3");
   const pythonArgs = ["-m", "uvicorn", "backend.main:app", "--host", "127.0.0.1", "--port", "8000"];
   
   console.log("Starting Python FastAPI backend on port 8000...");
