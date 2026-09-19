@@ -108,6 +108,12 @@ Built for hackathons and real-world utility with zero complicated databases and 
 
 ---
 
+## Deployment Link
+
+https://fileflow-8kg2.onrender.com
+
+---
+
 ## 🧪 Testing Instructions & Sample Files
 
 ### Automated Backend Test
@@ -143,3 +149,9 @@ Under the upload box in the web interface, click any of the **Quick Demo Test** 
 - FileFlow runs processing purely in memory buffers or temporary scratch locations.
 - Temporary files and memory buffers are purged immediately upon conversion completion.
 - No personal data or conversion history is stored in any permanent database.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
