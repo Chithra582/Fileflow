@@ -20,7 +20,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Install Node dependencies
 COPY package*.json bun.lock* ./
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 # Copy application source
 COPY . .
