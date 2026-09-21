@@ -1,0 +1,15 @@
+name: image-transformer
+description: Convert and re-encode images between JPG, PNG, and PDF.
+input_schema:
+  type: object
+  properties:
+    source_file:
+      type: string
+      description: Path to input image file.
+    target_format:
+      type: string
+      enum: ["jpg", "png", "pdf"]
+      description: Target output format.
+  required:
+    - source_file
+    - target_format

@@ -1,0 +1,10 @@
+name: file-purger
+description: Purge temporary file buffers immediately upon conversion completion.
+input_schema:
+  type: object
+  properties:
+    file_path:
+      type: string
+      description: Absolute path of temporary file to unlink.
+  required:
+    - file_path

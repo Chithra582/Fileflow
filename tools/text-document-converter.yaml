@@ -1,0 +1,15 @@
+name: text-document-converter
+description: Convert plain text into formatted PDF or DOCX documents.
+input_schema:
+  type: object
+  properties:
+    source_file:
+      type: string
+      description: Path to input text file.
+    target_format:
+      type: string
+      enum: ["pdf", "docx"]
+      description: Desired document format.
+  required:
+    - source_file
+    - target_format

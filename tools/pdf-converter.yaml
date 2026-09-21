@@ -1,0 +1,19 @@
+name: pdf-converter
+description: Render and convert PDF pages to JPG or PNG images.
+input_schema:
+  type: object
+  properties:
+    source_file:
+      type: string
+      description: Path to input PDF document.
+    target_format:
+      type: string
+      enum: ["jpg", "png"]
+      description: Target image format.
+    dpi:
+      type: integer
+      default: 144
+      description: Resolution scale.
+  required:
+    - source_file
+    - target_format
